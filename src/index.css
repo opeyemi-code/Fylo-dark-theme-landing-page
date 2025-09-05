@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 :root {
@@ -31,13 +32,15 @@
 
 body {
   background-color: var(--color-navy-850);
-  font-family: "Open Sans", sans-serif;
   color: var(--color-white);
   font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .nav,
-.hero__title {
+.hero__title,
+.features__title,
+.team {
   font-family: var(--font-heading);
 }
 
@@ -105,7 +108,7 @@ body {
   margin-top: -70px;
   text-align: center;
   font-size: 24px;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 
 .hero__description {
@@ -129,11 +132,71 @@ body {
   margin: 16px auto;
 }
 
-.features {
+.features,
+.team {
   background-color: var(--color-navy-900);
 }
 
+.features {
+  padding: 0 8vw;
+}
+
+.features__item {
+  text-align: center;
+  margin-bottom: 64px;
+  padding: 0.3125rem;
+}
+
+.features__item:last-child {
+  margin-bottom: 0;
+}
+
+.features__image {
+  margin-bottom: 24px;
+}
+
+.features__title {
+  margin-bottom: 16px;
+}
+
+.team {
+  padding: 100px 8vw;
+}
+
+.team__image {
+  width: 100%;
+  height: auto;
+}
+
+.team__content {
+  margin-top: 36px;
+}
+
+.team__title {
+  margin-bottom: 16px;
+}
+
+.team__description {
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.team__link {
+  color: var(--color-cyan-500);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 16px 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--color-cyan-500);
+}
+
 @media (min-width: 768px) {
+  body {
+    line-height: 1.7;
+  }
+
   .hero__image-wrapper {
     background-image: none;
     display: flex;
@@ -167,7 +230,6 @@ body {
 
   .hero__description {
     font-size: 18px;
-    line-height: 1.7;
     width: 35vw;
     margin: 0 auto;
     margin-top: -30px;
@@ -183,5 +245,39 @@ body {
     position: relative;
     top: -200px;
     /* margin: 0 auto; */
+  }
+
+  .features {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(2, minmax(auto, 500px));
+    gap: 5vw;
+    /* grid-template-rows: repeat(2, 1fr); */
+    justify-content: center;
+  }
+
+  .features__item {
+    position: relative;
+    top: -50px;
+  }
+
+  .features__description {
+    width: 80%;
+    margin: auto;
+  }
+
+  .team {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+  }
+
+  .team__image-wrapper,
+  .team__content {
+    width: 50%;
+  }
+
+  .team__description {
+    width: 90%;
   }
 }
