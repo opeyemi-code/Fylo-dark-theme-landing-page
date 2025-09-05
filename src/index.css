@@ -80,7 +80,7 @@ body {
   background-image: url("/public/images/bg-curvy-mobile.svg");
   background-repeat: no-repeat;
   background-position: bottom;
-  /* background-size: cover; */
+  background-size: 100%;
 }
 
 .hero__image {
@@ -129,47 +129,59 @@ body {
   margin: 16px auto;
 }
 
+.features {
+  background-color: var(--color-navy-900);
+}
+
 @media (min-width: 768px) {
   .hero__image-wrapper {
-    background-image: url("/public/images/bg-curvy-desktop.svg");
-    background-size: 100% auto;
+    background-image: none;
     display: flex;
-    /* height: 100vh */
   }
 
   .hero__image {
     width: 50%;
     margin: 0 auto;
-    padding-bottom: 40vw;
   }
 
   .hero__content {
     position: relative;
-  }
-
-  .hero__title,
-  .hero__description {
-    position: absolute;
-    top: -410px;
+    background-image: url("/public/images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center; /* place it at the bottom */
+    background-size: cover; /* let it stretch to cover */
+    background-color: inherit;
+    text-align: center;
+    padding-top: 100px; /* give space so image isn’t cut */
   }
 
   .hero__title {
     font-size: 36px;
-    width: 50vw;
+    width: 45vw;
+    padding: 50px 0;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    top: -200px;
   }
 
   .hero__description {
     font-size: 18px;
-    width: 40vw;
-    margin: 50px 0;
+    line-height: 1.7;
+    width: 35vw;
+    margin: 0 auto;
+    margin-top: -30px;
+    position: relative;
+    top: -240px;
   }
 
   .btn-cta {
     font-size: 18px;
-    width: 25%;
+    width: 20%;
     border-radius: 35px;
-    padding: 25px 0;
-    position: absolute;
-    top: -260px;
+    padding: 18px 0;
+    position: relative;
+    top: -200px;
+    /* margin: 0 auto; */
   }
 }
