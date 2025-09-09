@@ -9,8 +9,8 @@ export default function Team() {
       <div className="team__image-wrapper">
         <img
           className="team__image"
-          src="/public/images/illustration-stay-productive.png"
-          alt=""
+          src="/images/illustration-stay-productive.png"
+          alt="Illustration"
         />
       </div>
       <div className="team__content">

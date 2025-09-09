@@ -6,7 +6,7 @@ export default function HeroSection() {
       <div className="hero__image-wrapper">
         <img
           className="hero__image"
-          src="/public/images/illustration-intro.png"
+          src="/images/illustration-intro.png"
           alt=""
         />
       </div>

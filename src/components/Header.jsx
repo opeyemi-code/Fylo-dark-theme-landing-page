@@ -3,7 +3,7 @@ import React from "react";
 export default function Header() {
   return (
     <header className="header">
-      <img className="header__logo" src="/public/images/logo.svg" alt="Logo" />
+      <img className="header__logo" src="/images/logo.svg" alt="Logo" />
       <nav className="nav">
         <ul className="nav__list">
           <li className="nav__item">
