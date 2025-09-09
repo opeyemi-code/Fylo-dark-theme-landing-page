@@ -3,6 +3,9 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import Features from "./components/Features";
 import Team from "./components/Team";
+import Testimonal from "./components/Testimonal";
+import Subcription from "./components/Subcription";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -33,7 +36,10 @@ function App() {
           />
         </div>
         <Team />
+        <Testimonal />
+        <Subcription />
       </main>
+      <Footer />
     </div>
   );
 }

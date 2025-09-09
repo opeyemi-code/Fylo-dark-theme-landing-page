@@ -1,6 +1,9 @@
 import React from "react";
+import { useState } from "react";
 
 export default function Team() {
+  const [arrowIcon, setArrowIcon] = useState("/public/images/icon-arrow.svg");
+
   return (
     <div className="team">
       <div className="team__image-wrapper">
@@ -20,9 +23,23 @@ export default function Team() {
           Securely share files and folders with friends, family and colleagues
           for live collaboration. No email attachments required.
         </p>
-        <a className="team__link" href="http://">
+        <a
+          onMouseEnter={() =>
+            setArrowIcon(
+              "https://friedaxons.github.io/fylo-dark-theme-landing-page/images/icon-arrow-white.svg"
+            )
+          }
+          onMouseLeave={() => setArrowIcon("/public/images/icon-arrow.svg")}
+          className="team__link"
+          href="http://"
+        >
           See how fylo works
-          <img src="/public/images/icon-arrow.svg" alt="" />
+          <img className="cyan-arrow-icon" src={arrowIcon} alt="" />
+          {/* <img
+            className="white-arrow-icon"
+            src="https://friedaxons.github.io/fylo-dark-theme-landing-page/images/icon-arrow-white.svg"
+            alt=""
+          /> */}
         </a>
       </div>
     </div>

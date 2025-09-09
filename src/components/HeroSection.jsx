@@ -16,7 +16,7 @@ export default function HeroSection() {
           Access them wherever you need, share and collaborate with friends
           family, and co-workers.
         </p>
-        <button className="btn btn-cta" type="button">
+        <button className="btn hero__btn" type="button">
           Get Started
         </button>
       </div>
