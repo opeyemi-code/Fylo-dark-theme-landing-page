@@ -1,11 +1,14 @@
 import React from "react";
-import heroImage from "/public/images/illustration-intro.png";
 
 export default function HeroSection() {
   return (
     <div className="hero-section">
       <div className="hero__image-wrapper">
-        <img className="hero__image" src={heroImage} alt="" />
+        <img
+          className="hero__image"
+          src="/public/images/illustration-intro.png"
+          alt=""
+        />
       </div>
       <div className="hero__content">
         <h1 className="hero__title">
