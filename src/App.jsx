@@ -15,7 +15,7 @@ function App() {
         <HeroSection />
         <div id="features" className="features">
           <Features
-            image="/public/images/icon-access-anywhere.svg"
+            image="/images/icon-access-anywhere.svg"
             title="Access your files, anywhere"
             description="The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere."
           />
