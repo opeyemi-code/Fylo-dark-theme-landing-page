@@ -68,6 +68,8 @@ button:hover {
     var(--color-teal-200),
     var(--color-cyan-500)
   );
+  color: var(--color-white);
+  font-size: 18px;
 }
 
 /* ===== HEADER & NAVIGATION ===== */
@@ -137,7 +139,7 @@ button:hover {
   width: 60%;
   border: none;
   border-radius: 25px;
-  color: inherit;
+  /* color: inherit; */
   font-weight: var(--font-weight-bold);
   margin: 16px auto;
 }
@@ -427,7 +429,6 @@ button:hover {
   }
 
   .hero__btn {
-    font-size: 18px;
     width: 20%;
     border-radius: 35px;
     padding: 18px 0;
